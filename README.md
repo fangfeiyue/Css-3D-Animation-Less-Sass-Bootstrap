@@ -101,9 +101,10 @@ body{
 </div>
 ```
 原因：img为inline-block，会按照baseline的方式对齐，沿基线对齐就意味着到底线之间会有一空隙
+
 解决办法：
-    - 解决办法一：display:block
-    - 解决办法二：vertial-align:bottom
+- 解决办法一：display:block
+- 解决办法二：vertial-align:bottom
 
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
