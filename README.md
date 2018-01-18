@@ -89,7 +89,22 @@ body{
 <div class="custom-font">自定义字体</div>
 ```
 ### 行高
-- 
+- 问题：下面代码中图片距离div底部会产生一些间距
+```
+.div2{
+    background-color: red;
+}
+....
+<div class="div2">
+    <span>我是一个粉刷匠</span>
+    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=160554372,288864420&fm=27&gp=0.jpg" alt="">
+</div>
+```
+原因：img为inline-block，会按照baseline的方式对齐，沿基线对齐就意味着到底线之间会有一空隙
+解决办法：
+    - 解决办法一：display:block
+    - 解决办法二：vertial-align:bottom
+
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
 ## 感谢
