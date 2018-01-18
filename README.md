@@ -62,13 +62,24 @@ npm start
 
 ### 二、非布局样式
 #### 字体
-    - 字体名称用引号包裹，字体组不能用引号包裹
-    ```
-    body{
-        font-family: 'Gill Sans', sans-serif
-    }
-    ```
-
+- 字体名称用引号包裹，字体组不能用引号包裹,如下sans-serif是字体组，所以不能用引号包裹
+```
+body{
+    font-family: 'Gill Sans', sans-serif
+}
+```
+- 自定义字体
+```
+@font-face{
+    font-family: 'FangFeiyue';
+    src: url('');
+}
+.custom-font{
+    font-family: 'FangFeiyue'
+}
+...
+<div class="custom-font">自定义字体</div>
+```
 #### 行高
 - 
 ## 勘误
