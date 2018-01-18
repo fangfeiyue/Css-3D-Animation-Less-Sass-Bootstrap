@@ -130,6 +130,8 @@ div{
 
 <div></div>
 ```
+上述代码运行效果如下
+![背景渐变](https://github.com/fangfeiyue/Css-3D-Animation-Less-Sass-Bootstrap/blob/master/img/Snip20180118_2.png)
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
 ## 感谢
