@@ -137,6 +137,7 @@ div{
         - 下载这张雪碧图http://misc.360buyimg.com/mtd/pc/o2_toolbar/1.0.0/home/images/toolbars.png
         - 用ps打开这张雪碧图，分辨用选框工具测量图片左边和顶部到小人左边和顶部的距离，注意：测量的单位为像素哦
         - 如果ps测量单位为厘米，可以按ctrl+k--》单位尺寸--》单位--》标尺，将厘米改为像素
+        - 将这张图设置为背景图片background: url(http://misc.360buyimg.com/mtd/pc/o2_toolbar/1.0.0/home/images/toolbars.png); 
         - 设置background-position属性为刚测量的数据
 
         具体代码如下：
