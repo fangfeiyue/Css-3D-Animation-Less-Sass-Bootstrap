@@ -107,6 +107,7 @@ body{
 - 解决办法二：vertial-align:bottom
 
 ### 背景
+- linear-gradient背景渐变
 ```
 
 ...
