@@ -19,6 +19,18 @@ npm start
 - [√]
 - [√]
 - [] 
+## 一、Css基础-层叠样式表(Cascading Style Sheet)
+### 选择器
+```
+body{
+    background-color: red;
+    /* 每个css样式的最后一行都可以省略分号，但最好不要 */
+    color: blue
+}
+```
+#### 分类和权重
+### 非布局样式
+### hack
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
 ## 感谢
