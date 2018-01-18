@@ -133,8 +133,13 @@ div{
 上述代码运行效果如下
 ![背景渐变](https://github.com/fangfeiyue/Css-3D-Animation-Less-Sass-Bootstrap/blob/master/img/Snip20180118_2.png)
 - 背景图片和属性(雪碧图)
-雪碧图可以减少http请求，当页面有很多很小的图标时可以采用雪碧图来做。具体步骤如下：
- - 雪碧图
+    - 雪碧图，使用基本步骤，以京东左侧悬浮窗京东会员为例
+        - 下载这张雪碧图http://misc.360buyimg.com/mtd/pc/o2_toolbar/1.0.0/home/images/toolbars.png
+        - 用ps打开这张雪碧图，分辨用选框工具测量图片左边和顶部到小人左边和顶部的距离，注意：测量的单位为像素哦
+        - 如果ps测量单位为厘米，可以按ctrl+k--》单位尺寸--》单位--》标尺，将厘米改为像素
+        - 设置background-position属性为刚测量的数据
+
+        具体代码如下：
 ```
 ...
 .div3{
