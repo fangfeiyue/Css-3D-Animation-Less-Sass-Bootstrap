@@ -133,7 +133,19 @@ div{
 上述代码运行效果如下
 ![背景渐变](https://github.com/fangfeiyue/Css-3D-Animation-Less-Sass-Bootstrap/blob/master/img/Snip20180118_2.png)
 - 背景图片和属性(雪碧图)
-
+雪碧图可以减少http请求，当页面有很多很小的图标时可以采用雪碧图来做。具体步骤如下：
+ - 雪碧图
+```
+...
+.div3{
+    width: 100px;
+    height: 100px;
+    background: orange url(http://misc.360buyimg.com/mtd/pc/o2_toolbar/1.0.0/home/images/toolbars.png);
+    background-position: -97px -212px;
+}
+...
+<div class="div3"></div>
+```
 - base64和性能优化
     - 优点：
     使用base64的好处是可以节省http请求次数。
