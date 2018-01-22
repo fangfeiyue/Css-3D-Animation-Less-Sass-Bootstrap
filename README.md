@@ -171,6 +171,21 @@ div{
 <div class="div2"></div>
 ```
 - 多分辨率适配
+
+### 边框
+- 边框的背景图
+```
+...
+.div1{
+    width: 400px;
+    height: 200px;
+    border: 30px solid transparent;
+    border-image: url('./img/border.png') 30 round;
+}
+...
+<div class="div1"></div>
+```
+
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
 ## 感谢
