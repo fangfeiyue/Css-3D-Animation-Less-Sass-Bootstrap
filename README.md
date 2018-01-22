@@ -207,7 +207,23 @@ div{
     - auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
     - inherit	规定应该从父元素继承 overflow 属性的值。
 ### 文本折行
+- overflow(word-wrap)通用换行控制
+- word-break针对多字节文字
+- white-space空白处是否断行
+    - white-space: nowrap;文本不换行
 ```
+...
+.div1{
+    border: 1px solid;
+    width: 100px;
+    word-wrap: normal;
+    word-break: break-all;
+    white-space: normal;
+}
+...
+<div class="div1">
+    asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfadfasdfadsf
+</div>
 ```
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
