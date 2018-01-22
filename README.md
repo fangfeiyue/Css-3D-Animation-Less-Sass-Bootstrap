@@ -185,7 +185,19 @@ div{
 ...
 <div class="div1"></div>
 ```
-
+- 边框实现三角形
+```
+...
+ .div2{
+    width: 0;
+    height: 200;
+    border-bottom: 30px solid red;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+}
+...
+<div class="div2"></div>
+```
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
 ## 感谢
