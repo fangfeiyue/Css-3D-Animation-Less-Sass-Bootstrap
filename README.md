@@ -225,6 +225,13 @@ div{
     asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfadfasdfadsf
 </div>
 ```
+## Bootstrap4
+- 变化
+    - 兼容IE10+
+    - 使用flexbox布局
+    - 抛弃nomalize.css
+    - 提供布局和reboot版本
+
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
 ## 感谢
