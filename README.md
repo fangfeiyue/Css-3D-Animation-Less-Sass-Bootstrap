@@ -288,7 +288,43 @@ div{
 可以运用Bootstrap的栅格系统实现响应式布局,Bootstrap将屏幕分割成12分,我们可以使用Bootstrap定义的类来实现每个元素在不同的屏幕宽度下占屏幕几分，来实现响应式布局
 
 ![栅格系统](https://github.com/fangfeiyue/Css-3D-Animation-Less-Sass-Bootstrap/blob/master/img/Snip20180124_1.png)
-
+我们可以根据上面的表格来设计不同屏幕尺寸下，元素的占屏比
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Bootstrap</title>
+    <style>
+        .content > div{
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: #333;
+            background:#cccccc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="content col-12 col-lg-3 col-md-4 col-sm-6"><div>内容</div></div>
+            <div class="content col-12 col-lg-3 col-md-4 col-sm-6"><div>内容</div></div>
+            <div class="content col-12 col-lg-3 col-md-4 col-sm-6"><div>内容</div></div>
+            <div class="content col-12 col-lg-3 col-md-4 col-sm-6"><div>内容</div></div>
+            <div class="content col-12 col-lg-3 col-md-4 col-sm-6"><div>内容</div></div>
+            <div class="content col-12 col-lg-3 col-md-4 col-sm-6"><div>内容</div></div>
+            <div class="content col-12 col-lg-3 col-md-4 col-sm-6"><div>内容</div></div>
+            <div class="content col-12 col-lg-3 col-md-4 col-sm-6"><div>内容</div></div>
+        </div>
+    </div>
+</body>
+</html>
+```
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
 ## 感谢
