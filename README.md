@@ -231,6 +231,9 @@ div{
     - 使用flexbox布局
     - 抛弃nomalize.css
     - 提供布局和reboot版本
+- Bootstrap的优缺点
+    - 优点：css代码结构合理，现成的样式可以直接使用
+    - 缺点：定制较为繁琐，体积大
 ### bootstrap js组件
 
 注意：bootstrap js依赖于jq和proper.js，使用的时候要把这个js文件引进来
