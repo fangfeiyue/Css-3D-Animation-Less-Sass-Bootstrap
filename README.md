@@ -285,6 +285,9 @@ div{
 ```
 ###Bootstrap 响应式布局
 
+可以运用Bootstrap的栅格系统实现响应式布局,Bootstrap将屏幕分割成12分,我们可以使用Bootstrap定义的类来实现每个元素在不同的屏幕宽度下占屏幕几分，来实现响应式布局
+
+![栅格系统](https://github.com/fangfeiyue/Css-3D-Animation-Less-Sass-Bootstrap/blob/master/img/Snip20180124_1.png)
 
 ## 勘误
 由于本人的能力有限，项目难免有所瑕疵，欢迎您的批评、指正
