@@ -36,15 +36,19 @@
       text-align: center;
       position: absolute;
     }
-    #page1 {
+    #page0 {
       -webkit-transform-origin: bottom;
       -webkit-transition: -webkit-transform 1s linear;
     }
+    #page1,
     #page2,
     #page3, 
     #page4,
     #page5,
-    #page6 {
+    #page6,
+    #page7,
+    #page8,
+    #page9 {
       /* 设置旋转元素的基点位置 */
       -webkit-transform-origin: bottom;
       -webkit-transition: -webkit-transform 1s linear;
@@ -60,7 +64,7 @@
 
     function next(){
 
-      if (curIndex == 6) return;
+      if (curIndex == 9) return;
 
       let curPage = document.getElementById('page'+curIndex);
       curPage.style.webkitTransform = 'rotateX(-90deg)';
@@ -71,8 +75,7 @@
     }
 
     function pre(){
-      if (curIndex == 1) return;
-      console.log(curIndex);
+      if (curIndex === 0) return;
       let curPage = document.getElementById('page'+curIndex);
       curPage.style.webkitTransform = 'rotateX(90deg)';
 
@@ -85,17 +88,21 @@
 <body>
   <div class="my-3d-space">
     <div class="page-group">
+      <div class="page" id="page0">0</div>
       <div class="page" id="page1">1</div>
       <div class="page" id="page2">2</div>
       <div class="page" id="page3">3</div>
       <div class="page" id="page4">4</div>
       <div class="page" id="page5">5</div>
       <div class="page" id="page6">6</div>
+      <div class="page" id="page7">7</div>
+      <div class="page" id="page8">8</div>
+      <div class="page" id="page9">9</div>
     </div>
   </div>
   <div class="op">
-    <a href="javascript:next()">next</a>
-    <a href="javascript:pre()">previous</a>
+    <a href="javascript:next()">下一页</a>
+    <a href="javascript:pre()">上一页</a>
   </div>
 </body>
 </html>
