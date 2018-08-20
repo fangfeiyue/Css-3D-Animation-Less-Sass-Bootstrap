@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .my-3d-space {
+      /* perspective 属性定义 3D 元素距视图的距离，以像素计。该属性允许您改变 3D 元素查看 3D 元素的视图。当为元素定义 perspective 属性时，其子元素会获得透视效果，而不是元素本身 */
+      -webkit-perspective: 800;
+      /* perspective-origin 属性定义 3D 元素所基于的 X 轴和 Y 轴。该属性允许您改变 3D 元素的底部位置。当为元素定义 perspective-origin 属性时，其子元素会获得透视效果，而不是元素本身 */
+      -webkit-perspective-origin: 50% 50%;
+      
+      /* 为了防止3D窗口影响其他位置的显示 */
+      overflow: hidden;       
+    }
+    .page-group {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      /* 使被转换的子元素保留其 3D 转换 */
+      -webkit-transform-style: preserve-3d;
+      /* 为了把六个page重叠在一起 */
+      position: relative;
+    }
+    .page {
+      width: 360px; 
+      height: 360px;
+      padding: 20px;
+      background-color: black;
+      color: #fff;
+      font-weight: bold;
+      font-size: 360px;
+      line-height: 360px;
+      text-align: center;
+      position: absolute;
+    }
+    #page1 {
+      -webkit-transform-origin: bottom;
+      -webkit-transition: -webkit-transform 1s linear;
+    }
+    #page2,
+    #page3, 
+    #page4,
+    #page5,
+    #page6 {
+      /* 设置旋转元素的基点位置 */
+      -webkit-transform-origin: bottom;
+      -webkit-transition: -webkit-transform 1s linear;
+      -webkit-transform: rotateX(90deg);
+    }
+    .op {
+      text-align: center;
+      margin: 40px auto;
+    }
+  </style>
+  <script>
+    var curIndex = 1;
+
+    function next(){
+
+      if (curIndex == 6) return;
+
+      let curPage = document.getElementById('page'+curIndex);
+      curPage.style.webkitTransform = 'rotateX(-90deg)';
+
+      curIndex++;
+      let nexPage = document.getElementById('page'+curIndex);
+      nexPage.style.webkitTransform = 'rotateX(0deg)';
+    }
+
+    function pre(){
+      if (curIndex == 1) return;
+      console.log(curIndex);
+      let curPage = document.getElementById('page'+curIndex);
+      curPage.style.webkitTransform = 'rotateX(90deg)';
+
+      curIndex--;
+      let nextPage = document.getElementById('page'+curIndex);
+      nextPage.style.webkitTransform = 'rotateX(0deg)';
+    }
+  </script>
+</head>
+<body>
+  <div class="my-3d-space">
+    <div class="page-group">
+      <div class="page" id="page1">1</div>
+      <div class="page" id="page2">2</div>
+      <div class="page" id="page3">3</div>
+      <div class="page" id="page4">4</div>
+      <div class="page" id="page5">5</div>
+      <div class="page" id="page6">6</div>
+    </div>
+  </div>
+  <div class="op">
+    <a href="javascript:next()">next</a>
+    <a href="javascript:pre()">previous</a>
+  </div>
+</body>
+</html>
